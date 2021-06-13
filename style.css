@@ -2,13 +2,6 @@
 @import url('http://fonts.cdnfonts.com/css/menlo');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap');
 
-@font-face {
-    font-family: 'Menlo Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Menlo Regular'), url('Menlo-Regular.woff') format('woff');
-}
-
 * {
     text-decoration: none;
     list-style: none;
