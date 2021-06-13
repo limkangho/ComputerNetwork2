@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KANGHO LIM</title>
+    <link rel="stylesheet" href="../../../style.css">
+    <script src="../../../includeHTML.js"></script>
+    <script src="https://kit.fontawesome.com/b763290135.js" crossorigin="anonymous"></script>
+    <style>
+        #transport {
+           background-color: white;
+           color: #004189;
+        }
+        #transport i {
+            color: #004189;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- left -->
+    <section class="left" include_html="../../../left.html"></section>
+
+    <section class="right">
+        <!-- header -->
+        <section class="header">
+            <section class="breadcrumbs">
+                <ol>
+                    <li><a href="../ips.html">IPS</a></li>
+                    <li><a href="../transport.html">TRANSPORT</a></li>
+                    <li><a href="" class="currentPage">TCP</a></li>
+                </ol>
+            </section>
+        </section>
+
+        <section class="body">
+            <!-- sidebar -->
+            <section class="sidebar" include_html="sidebar_tcp.html"></section>
+
+            <section class="content">
+                <div class="title">
+                    <h2>TCP<br></h2>
+                </div>
+                
+                <article class="text">
+                    
+                    <section>
+                        <h3></h3>
+                        <p>
+                            TCP(Transport Control Protocol)는 일반적으로 IP(Internet Protocol)와 함께 사용하는데, IP가 데이터의 배달을 처리한다면 TCCP는 패킷을 추적하고 관리한다.
+
+                            TCP는 연결형 통신 방식으로 송수신 호스트 간의 연결이 필요하여 가상 회선 방식을 제공한다.
+                            가상 회선 방식은 송신 호스트와 수신 호스트를 연결하여 패킷을 전송하기 위한 논리적 경로를 배정한다.
+                            3-Way Hanshake 과정을 통해 송수신 호스트의 연결을 생성하고 4-Way Hanshake 과정을 통해 해제한다.
+                            흐름 및 혼잡 제어가 가능하다.
+                            높은 신뢰성을 보장한다
+                            UDP보다 속도가 느리다.
+                            전이중(FULL-DUPLEX), 점대점(Point To Point) 방식
+
+                            그렇다면 송수신 호스트 간 연결이 필요하지 않은 통신 방식이 있는걸까?
+
+                            UDP(User Datagram Protocol)는 비연결형 통신 방식으로 연결을 위해 할당되는 논리적 경로가 없다. 때문에 각각의 패킷이 서로 다른 경로로 전송되어 독립적인 관계를 지니게 된다.
+                        </p>
+                    </section>
+
+                </article>
+            </section>
+        </section>
+
+        <section class="footer">
+        </section>
+    </section>
+
+    <script>
+        includeHTML();
+    </script>
+</body>
+
+</html>

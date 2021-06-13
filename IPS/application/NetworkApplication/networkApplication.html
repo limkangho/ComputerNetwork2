@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KANGHO LIM</title>
+    <link rel="stylesheet" href="../../../style.css">
+    <script src="../../../includeHTML.js"></script>
+    <script src="https://kit.fontawesome.com/b763290135.js" crossorigin="anonymous"></script>
+    <style>
+        #application {
+           background-color: white;
+           color: #004189;
+        }
+        #application i {
+            color: #004189;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- left -->
+    <section class="left" include_html="../../../left.html"></section>
+
+    <section class="right">
+        <!-- header -->
+        <section class="header">
+            <section class="breadcrumbs">
+                <ol>
+                    <li><a href="../../ips.html">IPS</a></li>
+                    <li><a href="../application.html">APPLICATION</a></li>
+                    <li><a href="" class="currentPage">NETWORK APPLICATION</a></li>
+                </ol>
+            </section>
+        </section>
+
+        <section class="body">
+            <!-- sidebar -->
+            <section class="sidebar" include_html="sidebar_networkApplication.html"></section>
+
+            <section class="content">
+                <div class="title">
+                    <h2>Network Application<br>네트워크 응용 프로그램</h2>
+                </div>
+                
+                <article class="text">
+                    <section>
+                        <h3>Creating a Network App</h3>
+                        <p>
+                            네트워크 애플리케이션 개발이란 서로 다른 END SYSTEM(종단 시스템), 즉 서로 다른 호스트 환경에서 실행되어도 네트워크를 통해 서로 통신할 수 있는 응용 프로그램을 만드는 것이다.
+                            
+                        </p>
+                    </section>
+                    
+                    <section>
+                        <h3>Applcation Architecture </h3>
+                        <p>
+                            응용 프로그램이 네트워크 통신을 위해 갖출 수 있는 구조로는 Client-Server와 Peer-to-Peer(P2P) 방식이 있다.
+                        </p>
+                    </section>
+                    
+                    
+                    <section class="imgbox">
+                        <img src="../../../images/Client_server_model.png" alt="" width="80%" height="80%">
+                    </section>
+
+                    <section>
+                        <h3>Client/Server Architecture</h3>
+                        <p>
+                            Client-Server 모델에서 <br>
+                            모든 서버는 호스트이다(단, 모든 호스트가 서버인 것은 아니다). 
+                            네트워크와 연결을 생성한 모든 장치는 호스트의 자격이 있지만 다른 클라이언트 장치로부터의 연결을 요청받아 수락하는 호스트만 서버가 될 수 있다.
+                            서버는 영구적인 IP(Internet Protocol) 주소(Address)를 가지며 스케일링을 위한 데이터 센터를 갖출 수 있다.
+                            <br><br>
+                            Client-Server 모델에서 <br>
+                            클라이언트는 서버와 네트워크 연결을 생성하여 통신한다. 이 연결은 간헐적으로 가능하며 클라이언트는 IP 주소를 동적으로 가질 수 있다.
+                            서버는 클라이언트의 요청에 응답하여 통신할 수 있기 때문에 서로 영구적으로 통신하지 않는다.
+                        </p>
+                    </section>
+                    
+                    <section class="imgbox">
+                        <img src="../../../images/P2P.png" alt="" width="80%" height="80%">
+                    </section>
+
+                    <section>
+                        <h3>P2P Architecture</h3>
+                        <p>
+                            P2P 모델에서 모든 컴퓨터 장치는 호스트이자 서버이며 클라이언트가 될 수 있기 때문에(Client-Server 모델과 구분을 위해 Peer라고 한다) 상시 서버란 존재하지 않는다.  임의의 End System(종단 시스템)이 직접적으로 통신한다. 
+                            Peer는 다른 Peer와 데이터를 교환하고 제공하는 동등한 관계이며 새로운 Peer, 새로운 Service demand, 새로운 service capacity를 가질 수 있는 self scalability 특성을 가진다.
+                            Peer는 간헐적으로 연결되어 동적으로 IP 주소를 변경하기 떼문에 관리를 위한 측면에서는 복잡함이 존재한다.
+                        </p>
+                    </section>
+                    
+                    <section>
+                        <h3>IPC(Inter Process Communications)</h3>
+                        <p>
+                            Process란 호스트 장치 내에서 실행 중인 프로그램을 의미한다.
+                            같은 호스트 내에서 서로 다른 프로세스들이 데이터 교환을 위한 통신을 할 때에는 OS에 의해 정의된 IPC(Inter-Process Communication, 프로세스 간 통신)를 사용한다.
+                            서로 다른 호스트 장치의 프로세스 또한 데이터 교환을 위한 통신이 가능하다.
+                            
+                        </p>
+                    </section>
+
+                    <section>
+                        <h3>Socket</h3>
+                        <p>
+                            Process는 Socket으로부터 데이터를 받고 보낸다.
+                        </p>
+                    </section>
+                    
+                    <section>
+                        <h3>Addressing Process</h3>
+                        <p>
+                            데이터를 교환하기 위해 Processs는 구분을 위한 식별자가 필요하다. 호스트 장치는 숫자로 이루어진 자신만의 32bit IP 주소를 가진다.
+                            식별자는 호스트의 Process들과 연관된 IP address, Port 번호를 포함한다.
+                        </p>
+                    </section>
+                </article>
+            </section>
+        </section>
+
+        <section class="footer">
+        </section>
+    </section>
+
+    <script>
+        includeHTML();
+    </script>
+</body>
+
+</html>

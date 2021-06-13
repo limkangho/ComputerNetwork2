@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap');
+@import url('http://fonts.cdnfonts.com/css/menlo');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap');
+
+@font-face {
+    font-family: 'Menlo Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Menlo Regular'), url('Menlo-Regular.woff') format('woff');
+}
+
+* {
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: 'Noto Sans KR', sans-serif;
+    /* font-family: 'Menlo Regular'; */
+    /* font-family: 'Courier New', Courier, monospace; */
+}
+
+p {
+    line-height: 1.5;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex: row;
+}
+
+.left {
+    height: 100%;
+    border-radius: solid red 1px;
+    flex: 0 0 172px;
+    background-color: #004189;
+}
+
+.kangho ul li{
+    padding: 12px 10px;
+    margin-bottom: 12px;
+}
+
+.kangho ul li:hover {
+    background-color: rgb(0, 48, 101);
+}
+
+.chapter ul li {
+    padding: 12px 10px;
+    /* padding-left: 10px; */
+    color: white;
+    transition: 0.3s;
+}
+
+.chapter ul ul li {
+    padding: 12px 0 12px 10px;
+    padding-left: 30px;
+}
+
+.chapter ul li:hover {
+    /* color: #004189; */
+    background-color: rgb(0, 48, 101);
+}
+
+i {
+    padding-right: 10px;
+    color: white;
+}
+
+.right {
+    padding: 0 36px;
+    border-radius: solid blue 1px;
+    flex: 1 1 auto;
+    /* flex: 0 0 824px; */
+    overflow: auto;
+}
+
+.breadcrumbs {
+    border-bottom: 1px solid gray;
+    padding: 12px 0;
+    margin-bottom: 12px;
+}
+
+.breadcrumbs ol li {
+    display: inline-block;
+}
+
+.breadcrumbs ol li:not(:last-of-type)::after {
+    content: ' > ';
+}
+
+.breadcrumbs ol li a {
+    padding: 8px;
+}
+
+.breadcrumbs ol li a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumbs .currentPage {
+    color: #004189;
+}
+
+.header_box {
+    border-bottom: solid gray 1px;
+    color: #004189;
+}
+
+.body {
+    /* margin-top: 43px; */
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar {
+    flex: 0 0 128px;
+}
+
+.sidebar ul li {
+    padding: 12px 10px;
+    /* padding-left: 10px; */
+    color: #004189;
+}
+
+.sidebar ul li:hover {
+    text-decoration: underline;
+}
+
+.sidebar .currentPage {
+    color: gray;
+    text-decoration: underline;
+}
+
+.content {
+    border: 1px solid gray;
+    flex: 1 1 auto;
+    /* flex: 0 0 600px; */
+}
+
+.title {
+    text-align: center;
+    border-bottom: 1px solid gray;
+    padding: 12px 0;
+    margin: 10px 0;
+}
+
+.text {
+    /* text-align: center; */
+    padding: 12px 24px;
+    margin: 10px 0;
+}
+
+.text section {
+    display: inline-block;
+    margin: 20px 0;
+}
+
+.text section p {
+    margin: 20px 0;
+}
+
+.imgbox img {
+    display: block;
+    margin: 0 auto;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KANGHO LIM</title>
+    <link rel="stylesheet" href="../../style.css">
+    <script src="../../includeHTML.js"></script>
+    <script src="https://kit.fontawesome.com/b763290135.js" crossorigin="anonymous"></script>
+    <style>
+        #application {
+           background-color: white;
+           color: #004189;
+        }
+        #application i {
+            color: #004189;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- left -->
+    <section class="left" include_html="../../left.html"></section>
+
+    <section class="right">
+        <!-- header -->
+        <section class="header">
+            <section class="breadcrumbs">
+                <ol>
+                    <li><a href="../ips.html">IPS</a></li>
+                    <li><a href="" class="currentPage">APPLICATION</a></li>
+                </ol>
+            </section>
+        </section>
+
+        <section class="body">
+            <!-- sidebar -->
+            <section class="sidebar" include_html="sidebar_application.html"></section>
+
+            <section class="content">
+                <div class="title">
+                    <h2>Application Layer<br>응용 계층</h2>
+                </div>
+                
+                <article class="text">
+                    <section>
+                        <h3>Application Layer란?</h3>
+                        <section class="imgbox">
+                            <img src="../../images/applicationlayer.png" alt="" width="80%" height="80%">
+                        </section>
+                        <p>
+                            Application Layer는 IPS(Internet Protocol Suite) 모델과 OSI(Open Systems Interconnection Reference Model) 모델의 1번째 계층이다.
+                            <br><br>
+                            Application Layer는 클라이언트의 요청을 전달하기 위해 서버가 이해할 수 있는 데이터로 변환하여 전송 계층으로 전달하는 역할을 수행한다.
+                            클라이언트 측 응용 프로그램에서 서버 측 응용 프로그램과 통신하기 위해서는 Application Layer의 프로토콜을 사용해야한다.
+                            <br><br>
+                            Application Layer의 프로토콜로는 웹페이지 통신을 위한 HTTP, 파일을 전송하기 위한 FTP, 메일을 전송하기 위한 SMTP, 메일을 받기 위한 POP3, IMAP 등의 프로토콜이 있다.
+                        </p>
+                    </section>
+                    
+                </article>
+            </section>
+        </section>
+
+        <section class="footer">
+        </section>
+    </section>
+
+    <script>
+        includeHTML();
+    </script>
+</body>
+
+</html>
